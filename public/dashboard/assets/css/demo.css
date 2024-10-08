@@ -1,0 +1,297 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.light-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.app-brand-logo.demo {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34px;
+    height: 24px;
+}
+
+.app-brand-logo.demo svg {
+    width: 35px;
+    height: 24px;
+}
+
+.app-brand-text.demo {
+    font-size: 1.375rem;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 64px !important;
+}
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+    padding-top: 78px !important;
+}
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+    z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+    display: block !important;
+}
+
+.demo-inline-spacing > * {
+    margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+    margin-top: 1.875rem !important;
+    margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+    margin-top: 5rem !important;
+    margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.rtl-only {
+    display: none !important;
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+    display: block !important;
+}
+
+/* Dropdown buttons going out of small screens */
+@media (max-width: 576px) {
+    #dropdown-variation-demo .btn-group .text-truncate {
+        width: 254px;
+        position: relative;
+    }
+    #dropdown-variation-demo .btn-group .text-truncate::after {
+        position: absolute;
+        top: 45%;
+        right: 0.65rem;
+    }
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+    width: 900px;
+}
+.layout-demo-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.loader {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    justify-content: center;
+    align-items: center;
+    opacity:0.5;
+    cursor: progress;
+}
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+}
+
+.imagesUploadBlock {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgb(38 44 73 / 45%);
+    transition: all 0.3s linear 0s;
+}
+
+.uploadImg {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.uploadImg span i {
+    color: #7367f0;
+    font-size: 85px;
+}
+
+.uploadImg input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    display: none;
+}
+
+.uploadedBlock {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    z-index: 9;
+}
+
+.uploadedBlock img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.uploadedBlock .close {
+    position: absolute;
+    top: 0;
+    color: crimson;
+    background: rgba(0, 0, 0, 0.5) !important;
+    font-size: 25px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    left: 0;
+    text-shadow: none;
+    transition: all 0.3s linear 0s;
+    transform: scale(0);
+    border-radius: 50%;
+}
+
+.uploadedBlock:hover .close {
+    transform: scale(1);
+}
+
+.imgMontg {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.avatar{
+    white-space: nowrap;
+    background-color: #C3C3C3;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 0.75rem;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.avatar-content{
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.avatar.avatar-xl .avatar-content {
+    height: 70px;
+    width: 70px;
+
+}
+
+.avatar{
+    .fa-clock{
+        font-size: 2rem;
+    }
+}
+
+.form-controls{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-controls .clear-input{
+    position: absolute;
+    inset-inline-end: 10px;
+
+    cursor: pointer;
+}

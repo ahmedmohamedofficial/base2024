@@ -1,0 +1,218 @@
+<?php
+
+return [
+
+    'dashboard'         => [
+        'as'        => 'dashboard',
+        'title'     => 'dashboard',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-home"></i>',
+        'sub_route' => true,
+    ],
+    'intro-settings'    => [
+        'as'        => 'intro_site',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-map"></i>',
+        'title'     => 'intro_site',
+        'count'     => 9,
+        'sub_route' => true,
+        'child'     => [
+            'intro_site'               => ['sub_link' => true,],
+            'introsliders.index'       => ['sub_link' => true,],
+            'introsliders.create', 'introsliders.store', 'introsliders.show', 'introsliders.edit', 'introsliders.update', 'introsliders.delete', 'introsliders.deleteAll', 'introsliders.export',
+            // Intro Services
+            'introservices.index'      => ['sub_link' => true,],
+            'introservices.create', 'introservices.store', 'introservices.show', 'introservices.edit', 'introservices.update', 'introservices.delete', 'introservices.deleteAll', 'introservices.export',
+            // Intro Fqs Categories
+            'introfqscategories.index' => ['sub_link' => true,],
+            'introfqscategories.create', 'introfqscategories.store', 'introfqscategories.show', 'introfqscategories.edit', 'introfqscategories.update', 'introfqscategories.delete', 'introfqscategories.deleteAll', 'introfqscategories.export',
+            // Intro Fqs
+            'introfqs.index'           => ['sub_link' => true,],
+            'introfqs.create', 'introfqs.store', 'introfqs.show', 'introfqs.edit', 'introfqs.update', 'introfqs.delete', 'introfqs.deleteAll', 'introfqs.export',
+            // Intro Partners
+            'introparteners.index'     => ['sub_link' => true,],
+            'introparteners.create', 'introparteners.store', 'introparteners.show', 'introparteners.edit', 'introparteners.update', 'introparteners.delete', 'introparteners.deleteAll', 'introparteners.export',
+            // Intro Messages
+            'intromessages.index'      => ['sub_link' => true],
+            'intromessages.show', 'intromessages.delete', 'intromessages.deleteAll', 'intromessages.export',
+            // Intro Socials
+            'introsocials.index'       => ['sub_link' => true],
+            'introsocials.create', 'introsocials.store', 'introsocials.show', 'introsocials.edit', 'introsocials.update', 'introsocials.delete', 'introsocials.deleteAll', 'introsocials.export',
+            // Intro How Works
+            'introhowworks.index'      => ['sub_link' => true],
+            'introhowworks.create', 'introhowworks.store', 'introhowworks.show', 'introhowworks.edit', 'introhowworks.update', 'introhowworks.delete', 'introhowworks.deleteAll', 'introhowworks.export',
+        ],
+    ],
+    'admins'            => [
+        'title'     => 'admins.index',
+        'as'        => 'admins.index',
+        'icon'      => '<i class="menu-icon fa fa-users-gear"></i>',
+        'sub_route' => true,
+        'sub_link'  => true,
+        'child'     => [
+            'admins.index'  => ['sub_link' => true,],
+            'admins.create' => ['sub_link' => true,],
+            'admins.store', 'admins.edit', 'admins.update', 'admins.show', 'admins.block', 'admins.delete', 'admins.deleteAll', 'admins.notifications', 'admins.delete-notifications', 'admins.export'
+        ],
+    ],
+    'clients'            => [
+        'as'        => 'clients.index',
+        'title'     => 'clients.index',
+        'icon'      => '<i class="menu-icon fa-solid fa-building-user"></i>',
+        'sub_route' => true,
+        'sub_link'  => true,
+        'child'     => [
+            'clients.index'      => ['sub_link' => true,],
+            'clients.active'     => ['sub_link' => true,],
+            'clients.notActive'  => ['sub_link' => true,],
+            'clients.blocked'    => ['sub_link' => true,],
+            'clients.notBlocked' => ['sub_link' => true,],
+            'clients.create'     => ['sub_link' => true,],
+            'clients.show',
+            'clients.store',
+            'clients.edit',
+            'clients.update',
+            'clients.delete',
+            'clients.deleteAll',
+            'clients.notify',
+            'clients.block',
+            'clients.export',
+            'clients.is_approved'
+        ],
+    ],
+    'countries-cities'  => [
+        'as'        => 'countries.index',
+        'title'     => 'countries.countries_cities',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-globe-africa"></i>',
+        'sub_route' => true,
+        'child'     => [
+            'countries.index'      => ['sub_link' => true,],
+            'countries.show',
+            'countries.create'     => ['sub_link' => true,],
+            'countries.store',
+            'countries.edit',
+            'countries.update',
+            'countries.delete',
+            'countries.deleteAll',
+            'countries.export',
+            'cities.index'         => ['sub_link' => true,],
+            'cities.create'        => ['sub_link' => true,],
+            'cities.store',
+            'cities.edit',
+            'cities.show',
+            'cities.update',
+            'cities.delete',
+            'cities.deleteAll',
+            'cities.export',
+        ],
+    ],
+    'public-settings'   => [
+        'title'     => 'public_settings',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-gear"></i>',
+        'sub_route' => true,
+        'child'     => [
+            'socials.index'  => ['sub_link' => true,],
+            'socials.show',
+            'socials.create',
+            'socials.store',
+            'socials.show',
+            'socials.update',
+            'socials.edit',
+            'socials.delete',
+            'socials.deleteAll',
+            'socials.export',
+            'seos.show',
+            'seos.create',
+            'seos.edit',
+            'seos.index'     => ['sub_link' => true,],
+            'seos.store',
+            'seos.update',
+            'seos.delete',
+            'seos.deleteAll',
+            'seos.export',
+            'roles.index'    => ['sub_link' => true,],
+            'roles.create',
+            'roles.store',
+            'roles.edit',
+            'roles.update',
+            'roles.delete',
+            'roles.export',
+            'settings.index' => ['sub_link' => true,],
+            'settings.update',
+            'reports.index'  => ['sub_link' => true,],
+            'reports.delete',
+            'reports.deleteAll',
+            'reports.show',
+            'reports.export',
+            'pages.index'  => ['sub_link' => true,],
+            'pages.edit',
+            'pages.update',
+            'pages.show',
+
+        ],
+    ],
+    'public-sections'   => [
+        'title'     => 'public_sections',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-layer-group"></i>',
+        'sub_route' => true,
+        'child'     => [
+            'intros.index' => ['sub_link' => true,],
+            'intros.show',
+            'intros.create',
+            'intros.store',
+            'intros.edit',
+            'intros.update',
+            'intros.delete',
+            'intros.deleteAll',
+            'images.index' => ['sub_link' => true,],
+            'images.show',
+            'images.create',
+            'images.store',
+            'images.edit',
+            'images.update',
+            'images.delete',
+            'images.deleteAll',
+        ],
+    ],
+    'notifications'     => [
+        'as'       => 'notifications.index',
+        'title'    => 'notifications.index',
+        'icon'     => '<i class="menu-icon fa fa-bell"></i>',
+        'sub_link' => true,
+        'child'    => [
+            'notifications.send',
+        ],
+    ],
+    'sms'               => [
+        'as'        => 'sms.index',
+        'title'     => 'sms.index',
+        'icon'      => '<i class="menu-icon menu-icon tf-icons fa fa-comment-sms"></i>',
+        'sub_route' => false,
+        'child'     => [
+            'sms.update',
+            'sms.change'
+        ],
+    ],
+//    'contact_us'     => [
+//        'as'        => 'contact_us.index',
+//        'title'     => 'contact_us.index',
+//        'icon'      => '<i class="menu-icon fa fa-headset"></i>',
+//        'sub_route' => false,
+//        'child'     => [
+//            'contact_us.show',
+//            'contact_us.delete',
+//            'contact_us.deleteAll',
+//            'contact_us.replay',
+//        ]
+//    ],
+    'settlements' => [
+        'as'        => 'settlements.index',
+        'title'     => 'settlements.index',
+        'icon'      => '<i class="menu-icon fa fa-dollar-sign"></i>',
+        'sub_route' => false,
+        'child'     => [
+            'settlements.show',
+            'settlements.update'
+
+        ]
+    ],
+    #new_permissions_here
+];
