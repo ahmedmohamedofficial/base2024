@@ -196,7 +196,7 @@ return [
 	'confirm_delete_member'                                                  => 'Confirm Delete Member',
 	'all_rights_reserved'                                                    => 'All Rights Reserved',
 	'design_and_programming_by'                                              => 'Design and Programming By',
-	"awamer_alshabaka"                                                       => "Awamer Alshabaka",
+	"base2024"                                                      		 => "bas2024",
 	"available"                                                              => "Available",
 	"notifications"                                                          => "notifications",
 	"send_notification"                                                      => "send notification",

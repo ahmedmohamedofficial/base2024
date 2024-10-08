@@ -196,7 +196,7 @@ return [
 	'confirm_delete_member'                                                  => 'تأكيد حذف العضو',
 	'all_rights_reserved'                                                    => 'جميع الحقوق محفوظة',
 	'design_and_programming_by'                                              => 'تصميم وبرمجة بواسطة',
-	"awamer_alshabaka"                                                       => "أوامر الشبكة",
+	"base2024"                                                       		 => "بيز2024",
 	"available"                                                              => "متاح",
 	"notifications"                                                          => "الاشعارات",
 	"send_notification"                                                      => "ارسال اشعار",

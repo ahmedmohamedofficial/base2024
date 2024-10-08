@@ -40,13 +40,13 @@
                             <div>
                                 {{__('admin.Copyrights')}} &copy; {{\Carbon\Carbon::now()->year}}
                                 ,  {{__('admin.all_rights_reserved')}} ❤️  {{ __('admin.by') }}
-                                <a href="https://aait.sa/" target="_blank" class="fw-medium">{{__('admin.awamer_alshabaka')}}</a>
+                                <a href="#" target="_blank" class="fw-medium">{{__('admin.base2024')}}</a>
 
                             </div>
                             <div class="d-none d-lg-inline-block">
                                 <div class="demo-inline-spacing">
-                                    <a class="btn btn-icon btn-outline-primary waves-effect" target="_blank" href="mailto:sales@aait.sa" ><i class="fa fa-envelope pink"></i></a>
-                                    <a class="btn btn-icon btn-outline-primary waves-effect" target="_blank" href="tel:920005929" ><i class="fa fa-phone pink"></i></a>
+                                    <a class="btn btn-icon btn-outline-primary waves-effect" target="_blank" href="mailto:salesbuisnessofficial@gmail.com" ><i class="fa fa-envelope pink"></i></a>
+                                    {{-- <a class="btn btn-icon btn-outline-primary waves-effect" target="_blank" href="tel:920005929" ><i class="fa fa-phone pink"></i></a> --}}
                                 </div>
 
                             </div>

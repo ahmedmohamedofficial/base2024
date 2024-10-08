@@ -13,7 +13,7 @@ class AdminTableSeeder extends Seeder
 
 		Admin::factory()->create([
 			'name'     => 'Manager',
-			'email'    => 'aait@info.com',
+			'email'    => 'admin@admin.com',
 			'phone'    => '555105813',
 			'password' => 123456,
 			'type'     => 'super_admin',

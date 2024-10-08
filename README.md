@@ -1,7 +1,7 @@
-<p align="center"><img src="public/defaults/settings/logo.png" height="300" alt="Awamer Alshabak Logo"></p>
+<p align="center"><img src="public/defaults/settings/logo.png" height="300" alt="Base2024 Logo"></p>
 
-# Awamer Alshabak
-Awamer Alshabak is a project for women developed using Laravel, and provides a platform for caring for women and their beauty, such as hair, nail and skin care.
+# Bases2024
+Bases2024  is a project for women developed using Laravel, and provides a platform for caring for women and their beauty, such as hair, nail and skin care.
 
 ## Table of Contents
 
@@ -84,7 +84,7 @@ Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access t
 ### You can log in to the dashboard using the following credentials:
 
 - Link: [http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
-- Email: aait@info.com
+- Email: admin@admin.com
 - Password: 123456
 
 ## Usage for create new section in dashboard
@@ -199,6 +199,6 @@ $file->storeAs($path, $filename);]
 ## Project links
  - site url : [http://127.0.0.1:8000](http://127.0.0.1:8000)
  - admin url : [http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
-    - email : aait@info.com
+    - email : admin@admin.com
     - password : 123456
     

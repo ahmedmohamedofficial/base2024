@@ -11,10 +11,10 @@
         <!-- TODO: user Auth::check() and Auth::user() data here instead of this test data-->
         <meta name="user_id" content="101">
         <meta name="user_type" content="User">
-        <meta name="user_name" content="AAIT">
+        <meta name="user_name" content="Base2024">
         <meta name="user_avatar" content="{{asset('/storage/images/users/default.png')}}">
 
-        <title>AAIT</title>
+        <title>Base2024</title>
 
     </head>
     <body>
